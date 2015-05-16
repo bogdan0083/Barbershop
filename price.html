@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestPage1</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body style="background: #fff">
+<div class="header">
+	<div class="wrapper clearfix">
+		<div class="account-menu clearfix">
+		<a href="#" class="account-menu-enter">Вход</a>
+	</div>
+	<div class="mobile-menu">Меню</div>
+	<ul class="top-menu clearfix">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="" class="top-menu__info">Информация</a></li>
+		<li><a href="" class="top-menu__news">Новости</a></li>
+		<li><a href="price.html" class="top-menu__price active">Прайс-лист</a></li>
+		<li><a href="shop.html" class="top-menu__shop">Магазин</a></li>
+		<li><a href="" class="top-menu__contact">Контакты</a></li>
+		<li><a href="" class="popup-menu">Еще</a></li>
+	</ul>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="page-title">
+		<h2>Barbershop BORODINSKI - Прайс-лист</h2>
+		<a href="index.html">Главная</a>
+		<a href="price.html">Прайс-лист</a>
+
+	</div>
+	<div class="inner-content clearfix">
+			<div class="mega-title"><h1>Истинно мужская классика</h1></div>
+			<div class="inner-content__left-col">
+				<h2>Мы используем только лучшие средства</h2>
+					<ul class="custom-list-1">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin+Goets</li>
+					</ul>
+					<h2>Несколько слов о нас:</h2>
+					<p>Наша парихмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+			</div>
+			<div class="inner-content__right-col">
+				<h2>Цены на услуги наших мастеров:</h2>
+				<table class="prices">
+				<tr>
+					<th>Стрижка</th>
+					<td>1500р</td>
+				</tr>
+				<tr>
+					<th>Стрижка бороды</th>
+					<td>500 р.</td>
+				</tr>
+				<tr>
+					<th>Накрутка усов</th>
+					<td>350 р.</td>
+				</tr>
+				</table>
+				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время ,даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+			</div>
+	</div>
+</div>
+<div class="footer clearfix">
+	<div class="wrapper ">
+		<div class="footer-contacts-address">Barbershop "BORODINSK" <br>
+		Адрес: Г.Москва, Ул. Собаки Павлова, д.13<br>
+		Телефон: +7(495) 666-02-666</div>
+		<div class="social-buttons clearfix">
+			<p class="social-buttons-caption">Давайте дружить!</p class="social-buttons-caption">
+			<a href="http://vk.com" class="btn-social btn-social-vk"></a>
+			<a href="http://facebook.com" class="btn-social btn-social-facebook"></a>
+			<a href="http://instagram.com" class="btn-social btn-social-instagram"></a>
+		</div>
+			<div class="copyright">
+			<p>Дизайн сайта</p>
+			<a href="http://gluanko.ru" class="black-btn">Gluhanko.ru</a>
+		</div>
+	</div>
+</div>
+<div class="login-popup">
+	<h2 class="login-popup-heading">Личный кабинет</h2>
+	<p>Введите пожалуйста свой логин и пароль если вы забыли пароль</p>
+	<form class="login-form" action="/auth" method="post">
+		<input class="login-field" type="text" name="login">
+		<input class="password-field" type="password" name="password">
+		<a class="restore">Я забыл пароль</a>
+		<label>	<input type="checkbox" name="remember" class="checkbox">Запомните меня</label>	
+		<input type="submit" value="Войти">
+	</form>
+</div>
+	<script>
+	$('.mobile-menu').on('click', function(){
+		$('.top-menu').toggleClass('showing');
+	});
+	</script>
+</body>
+</html>
